@@ -210,7 +210,7 @@ STATIC_URL = "/"
 # Example: "/home/media/media.lawrence.com/static/"
 STATICFILES_DIRS = (os.path.join(PROJECT_ROOT, 'static'),)
 
-STATIC_ROOT = (os.path.join(PROJECT_ROOT, 'public'),)
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'public')
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
