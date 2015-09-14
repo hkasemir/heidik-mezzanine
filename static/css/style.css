@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
-/*  border: 1px dashed lightgrey;*/
 }
 
 a {
@@ -77,26 +76,6 @@ footer a {
 
 li {
   list-style: none;
-}
-
-.blog-thumbnail {
-  width: 100%;
-  min-width: 375px;
-  margin-bottom: 20px;
-  
-}
-
-.blog-splash {
-  position: relative;
-}
-
-.blog-title {
-  position: absolute;
-  top: 20%;
-  color: white;
-  font-size: 4em;
-  left: 20%;
-  text-shadow: 0 0 10px black;
 }
 
 .content-divider {
@@ -205,13 +184,13 @@ li {
 
 .container {
   display: flex;
-  margin: 20px;
+/*  margin: 20px;*/
 
 }
 
 .container .main-content {
   flex: 1;
-  margin: 20px;
+/*  margin: 20px;*/
   overflow: hidden;
 }
 
@@ -263,9 +242,9 @@ li {
 
 
 .image {
-  min-width: 400px;
-  max-width: 600px;
-  width: 48.5%;
+  min-width: 350px;
+/*  max-width: 600px;*/
+  width: 49%;
   margin:.5%
 }
 
@@ -392,6 +371,7 @@ div.social-icons {
   justify-content: space-between;
   padding: 40px 40px 0 40px;
   position: relative;
+  flex-wrap: wrap;
 }
 
 #main-nav .branches {
@@ -403,5 +383,60 @@ div.social-icons {
 #main-nav .branches-active {
   visibility: visible;
   padding: 20px 0 20px 0;
+}
+
+@media (max-width: 750px){
+  
+  footer {
+    padding: 20px;
+  }
+  
+  .branch-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }  
+  
+  .branch-menu li {
+    margin-left: 0;
+    
+  }
+  
+  .img-responsive a {
+    font-size: 3em;
+  }
+  
+  .navbar-header {
+    text-align: center;
+    width: 100%;
+    
+  }
+  
+  .navbar-menu {
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+  
+  .nav li {
+    margin-left: 0;
+  }
+  
+  .nav-footer .list-unstyled, div.social-icons {
+    float: none;
+  }
+  
+  #main-nav {
+    justify-content: space-between;
+    padding: 0;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  
+  #menu-home {
+    display: none;
+  }
+  
 }
 
