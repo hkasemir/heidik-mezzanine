@@ -7,4 +7,5 @@ __pycache__/
 .DS_Store
 .coverage
 local_settings.py
-
+public/*
+static/media/*
