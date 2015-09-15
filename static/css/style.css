@@ -6,11 +6,18 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: black;
   padding: 5px;
   transition: all .3s;
+}
+
+a {
+  text-decoration: none;
+  padding: 5px;
+  transition: all .3s;
+  font-weight: bold;
 }
 
 a:hover {
@@ -109,8 +116,15 @@ li {
   width: 100%;
 }
 
+/*
+.main-content {
+    padding: 3em;
+}
+*/
+
 .main-content p {
-  padding-bottom: 20px;
+  font-size: 1.3em;
+  padding: 3em;
   line-height: 1.5em;
 }
 
@@ -404,6 +418,11 @@ div.social-icons {
   
   .img-responsive a {
     font-size: 3em;
+  }
+    
+  .main-content p {
+    font-size: 1em;
+    padding: 1.5em;
   }
   
   .navbar-header {
