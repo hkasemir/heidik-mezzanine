@@ -20,7 +20,7 @@
 {% endcompress %}
 
 {% compress js %}
-<script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
+<script defer src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
 <script src="http://d3js.org/d3.v3.js"></script>
 {% block extra_js %}{% endblock %}
 {% endcompress %}

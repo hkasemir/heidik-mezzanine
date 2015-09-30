@@ -19,7 +19,7 @@
 <div class="image">
     <a class="thumbnail" rel="#image-{{ image.id }}" title="{{ image.description }}" href="{{ image.file.url }}">
        <div class="img-responsive">
-        <img src="{{ MEDIA_URL }}{% thumbnail image.file 600 0 %}">
+        <img src="{{ MEDIA_URL }}{% thumbnail image.file 600 0 80 %}">
         </div>
     </a>
 </div>
