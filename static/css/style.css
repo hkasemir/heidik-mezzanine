@@ -28,7 +28,7 @@ a:hover {
 
 footer {
   background-color: #333333;
-  padding: 60px;
+  padding: 1.5em;
   overflow: auto;
 }
 
@@ -80,6 +80,8 @@ li {
   padding: 1em 5em;
   line-height: 1.5em;
   max-width: 42em;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .main-content h2 {
@@ -88,6 +90,9 @@ li {
   margin-top: 30px;
   padding-left: 2.5em;
   font-size: 2em;
+  max-width: 28em;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .nav li {
@@ -175,7 +180,7 @@ li {
 
 .list-unstyled {
   padding-left: 10px;
-  padding-bottom: 20px;
+/*  padding-bottom: 20px;*/
   line-height: 1.5em;
 }
 
@@ -277,10 +282,9 @@ a.thumbnail{
   z-index: -1; 
 }
   
-p.under-splash {
-  margin-top: 45%;
-  padding-top: 1.5em;
-  background: linear-gradient( rgba(255,255,255,0), white 10%);
+.under-splash {
+  margin-top: 30%;
+  background-color: rgba(255,255,255,0.7);
 }
 
 .title {
@@ -304,6 +308,7 @@ div.social-icons {
   padding: 40px 40px 0 40px;
   position: relative;
   flex-wrap: wrap;
+  margin-bottom: 3em;
 }
 
 #main-nav .branches {
@@ -352,6 +357,7 @@ div.social-icons {
   .main-content p {
     font-size: 1em;
     padding: 0 1.5em;
+    background-color: rgba(255,255,255,0.7);
   }
   
   .navbar-header {
@@ -366,7 +372,7 @@ div.social-icons {
     width: 100%;
   }
   
-  .navbar-menu ul li:first-child {
+  ul.nav li:first-child {
     display: none;
   }
   
