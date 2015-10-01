@@ -15,7 +15,7 @@
     
 <div class="img-responsive">
         <img src="{{ MEDIA_URL }}{% thumbnail image.file 600 0 80 %}">
-         <a class="thumbnail" rel="#image-{{ image.id }}" title="{{ image.description }}" href="{{ image.file.url }}"></a>
+         <a class="thumbnail" rel="#image-{{ image.id }}" title="{{ image.description }}" href="{{ MEDIA_URL }}{% thumbnail image.file 1200 0 90 %}"></a>
 </div>
 {% endfor %}
 {% endwith %}
