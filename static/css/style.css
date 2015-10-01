@@ -82,6 +82,7 @@ li {
   max-width: 42em;
   margin-right: auto;
   margin-left: auto;
+  background-color: rgba(255,255,255,0.7);
 }
 
 .main-content h2 {
@@ -286,6 +287,11 @@ a.thumbnail{
   margin-top: 30%;
   background-color: rgba(255,255,255,0.7);
 }
+  
+.under-splash2 {
+  margin-top: 10%;
+  background-color: rgba(255,255,255,0.7);
+}
 
 .title {
   text-align: center;
@@ -350,14 +356,14 @@ div.social-icons {
     z-index: -1; 
   }
   
-  p.under-splash {
+  .under-splash {
     margin-top: 0;
   }
     
   .main-content p {
     font-size: 1em;
     padding: 0 1.5em;
-    background-color: rgba(255,255,255,0.7);
+    background: none;
   }
   
   .navbar-header {
