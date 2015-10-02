@@ -29,11 +29,16 @@ a:hover {
 footer {
   background-color: #333333;
   padding: 1.5em;
-  overflow: auto;
+  text-align: center;
 }
 
 footer a {
   color: white;
+}
+
+footer p {
+  color: #328195;
+  padding: 1em;
 }
 
 iframe {
@@ -175,19 +180,6 @@ li {
   padding-bottom: 10px;
 }
 
-.list-unstyled {
-  padding-left: 10px;
-/*  padding-bottom: 20px;*/
-  line-height: 1.5em;
-}
-
-.nav-footer .list-unstyled {
-  padding-left: 50px;
-  display: inline;
-  position: relative;
-  float: left;
-}
-
 .navbar-header p{
   display: inline;
 }
@@ -295,7 +287,7 @@ a.thumbnail{
 }
 
 div.social-icons {
-  float: right;
+  text-align: center;
 }
 
 .social-icons li {
@@ -325,10 +317,6 @@ div.social-icons {
 }
 
 @media (max-width: 750px){
-  
-  footer {
-    padding: 20px;
-  }
   
   .branch-menu {
     display: flex;
@@ -380,10 +368,6 @@ div.social-icons {
   
   .nav li {
     margin-left: 0;
-  }
-  
-  .nav-footer .list-unstyled, div.social-icons {
-    float: none;
   }
   
   #main-nav {
