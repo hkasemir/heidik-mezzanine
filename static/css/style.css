@@ -303,6 +303,7 @@ div.social-icons {
   position: relative;
   flex-wrap: wrap;
   margin-bottom: 5em;
+  text-shadow: 0 0 10px white;
 }
 
 #main-nav .branches {

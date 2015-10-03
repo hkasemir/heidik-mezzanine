@@ -1,6 +1,9 @@
 {% extends "pages/page.html" %}
 
 {% load mezzanine_tags staticfiles %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static "css/lightbox.min.css" %}">
+{% endblock %}
 
 {% block main %}
 {{ block.super }}
@@ -14,11 +17,13 @@
 {% for image in images %}
     
 <div class="img-responsive">
-        <img src="{{ MEDIA_URL }}{% thumbnail image.file 450 0 80 %}">
-         <a class="thumbnail" rel="#image-{{ image.id }}" title="{{ image.description }}" href="{{ MEDIA_URL }}{% thumbnail image.file 1200 0 90 %}"></a>
+        <img src="{{ MEDIA_URL }}{% thumbnail image.file 450 0 80 %}" data-jslghtbx="{{ MEDIA_URL }}{% thumbnail image.file 1200 0 90 %}" data-jslghtbx-caption="{{ image.description }}" data-jslghtbx-group="group1">
 </div>
 {% endfor %}
 {% endwith %}
 </div>
 {% endblock %}
 
+{% block extra_js %}
+<script src="{% static "js/lightbox.js" %}" defer></script>
+{% endblock %}

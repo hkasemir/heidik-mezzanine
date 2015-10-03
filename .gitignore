@@ -9,3 +9,7 @@ __pycache__/
 local_settings.py
 public/*
 static/media/*
+**/.*
+node_modules
+bower_components
+README.md
