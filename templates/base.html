@@ -19,25 +19,26 @@
   {% endcompress %}
   {% block extra_head %}{% endblock %}
 </head>
-
 <body id="{% block body_id %}body{% endblock %}">
+<header>
+  <div class="navbar-header">
+    {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
+    {% if settings.SITE_TAGLINE %}<p class="navbar-text">{{ settings.SITE_TAGLINE }}</p>{% endif %}
+  </div>
   <nav id="main-nav">
-    <div class="navbar-header">
-      {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
-      {% if settings.SITE_TAGLINE %}<p class="navbar-text">{{ settings.SITE_TAGLINE }}</p>{% endif %}
-    </div>
     <div class="navbar-menu">
       {% page_menu "pages/menus/dropdown.html" %}
     </div>
   </nav>
+</header>
 
-<section class="main-content">
+<div class="main-content">
   {% block main %}{% endblock %}
-</section>
+</div>
 
 <footer>
   <p>- Page by Heidi Kasemir - Get in Touch -</p>
-  <div class="social-icons">
+  <nav class="social-icons">
     <ul>
       <li><a href="mailto:heidi.kasemir@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
       <li><a href="http://www.github.com/hkasemir" target="_blank"><i class="fa fa-github-square"></i></a></li>
@@ -45,7 +46,7 @@
       <li><a href="https://www.pinterest.com/heidikasemir/" target="_blank"><i class="fa fa-pinterest-square"></i></a></li>
       <li><a href="https://www.linkedin.com/pub/heidi-kasemir/7b/627/a17" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
     </ul>
-  </div>
+  </nav>
 </footer>
 {% include "includes/footer_scripts.html" %}
 </body>

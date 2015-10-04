@@ -6,6 +6,11 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
 nav a {
   text-decoration: none;
   color: black;
