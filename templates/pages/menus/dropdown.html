@@ -26,7 +26,7 @@
 <ul class="branch-menu">
     {% for page in page_branch %}
     {% if page.in_menu %}
-    <li class="{% if page.is_current_or_ascendant %}active{% endif %}" id="{{ page.html_id }}">
+    <li {% if page.is_current_or_ascendant %}class="active"{% endif %} id="{{ page.html_id }}">
       <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
     </li>
     {% endif %}
