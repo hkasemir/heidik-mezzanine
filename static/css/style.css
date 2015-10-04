@@ -219,6 +219,7 @@ a.thumbnail{
 
 .img-click:hover, .img-responsive > a:hover > img {
   transition: all .5s;
+  -webkit-filter: brightness(.5);
   filter: brightness(.5);
 }
 
