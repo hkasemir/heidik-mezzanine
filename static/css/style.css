@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('./Josefin_Sans/JosefinSans-Regular.ttf')
+  
+}
 
 * {
   box-sizing: border-box;
@@ -274,12 +279,6 @@ div.social-icons {
 }
 
 @media (max-width: 750px){
-  
-  .branch-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
   
   header {
     display: block;
