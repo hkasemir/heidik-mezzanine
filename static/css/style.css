@@ -92,6 +92,7 @@ li {
   margin-right: auto;
   margin-bottom: 2em;
   box-shadow: 0px 2px 5px #aaa;
+  text-align: center;
 }
 
 .card p, .card h2 {
@@ -362,7 +363,10 @@ div.social-icons {
   .img-responsive {
     width: 99%;
     margin: 0.1em;
-
+  }
+  
+  .card > p > img {
+    width: 100%;
   }
 }
 
