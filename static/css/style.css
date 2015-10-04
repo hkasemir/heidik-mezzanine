@@ -121,12 +121,9 @@ li {
 }
 
 .navbar-header {
-  padding: 20px;
-  font-size: 2.5em;
-}
-
-.navbar-text {
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
   font-size: 2.5em;
 }
 
@@ -162,15 +159,6 @@ li {
 .branch-menu li {
   display: inline;
   margin-left: 30px;
-}
-
-.navbar-header p{
-  display: inline;
-}
-
-.navbar-text {
-  color: gray;
-  font-size: .5em;
 }
 
 .gallery {
@@ -271,7 +259,6 @@ div.social-icons {
   padding: 40px 40px 0 40px;
   position: relative;
   flex-wrap: wrap;
-  margin-bottom: 5em;
   text-shadow: 0 0 10px white;
 }
 
@@ -292,7 +279,16 @@ div.social-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }  
+  }
+  
+  header {
+    display: block;
+    text-align: center;
+  }
+  
+  .navbar-header {
+    display: block;
+  }
   
   .branch-menu li {
     margin-left: 0;

@@ -21,10 +21,9 @@
 </head>
 <body id="{% block body_id %}body{% endblock %}">
 <header>
-  <div class="navbar-header">
+  <h1 class="navbar-header">
     {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
-    {% if settings.SITE_TAGLINE %}<p class="navbar-text">{{ settings.SITE_TAGLINE }}</p>{% endif %}
-  </div>
+  </h1>
   <nav id="main-nav">
     <div class="navbar-menu">
       {% page_menu "pages/menus/dropdown.html" %}
