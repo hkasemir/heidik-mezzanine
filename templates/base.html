@@ -1,83 +1,55 @@
 <!doctype html>
 <html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %}>
 {% load pages_tags mezzanine_tags i18n future staticfiles %}
-
 <head>
-<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
-<meta name="description" content="{% block meta_description %}{% endblock %}">
-<title>{{ settings.SITE_TITLE }} | {% block meta_title %}{% endblock %}</title>
-<link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-{% compress css %}
-
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{% static "css/style.css" %}">
-
-{% block extra_css %}{% endblock %}
-{% endcompress %}
-
-{% compress js %}
-{% block extra_js %}{% endblock %}
-{% endcompress %}
-
-    
-
-
-{% block extra_head %}{% endblock %}
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
+  <meta name="description" content="{% block meta_description %}{% endblock %}">
+  <title>{{ settings.SITE_TITLE }} | {% block meta_title %}{% endblock %}</title>
+  <link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  {% compress css %}
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    {% block extra_css %}{% endblock %}
+  {% endcompress %}
+  {% compress js %}
+    {% block extra_js %}{% endblock %}
+  {% endcompress %}
+  {% block extra_head %}{% endblock %}
 </head>
 
 <body id="{% block body_id %}body{% endblock %}">
 
 <nav id="main-nav">
-<div class="navbar-header">
+  <div class="navbar-header">
     {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
     {% if settings.SITE_TAGLINE %}<p class="navbar-text">{{ settings.SITE_TAGLINE }}</p>{% endif %}
-</div>
-
-<div class="navbar-menu">
+  </div>
+  <div class="navbar-menu">
     {% page_menu "pages/menus/dropdown.html" %}
-</div>
+  </div>
 </nav>
 
-
 <div class="container">
-
   <div class="main-content">
-      {% block main %}{% endblock %}
+    {% block main %}{% endblock %}
   </div>
-
-  {% block right_panel %}
-  {% endblock %}
 </div>
 
 <footer>
-<p>- Page by Heidi Kasemir - Get in Touch -</p>
-
-<div class="social-icons">
-<ul>
-    <li><script>
-//     Begin
-    user = "heidi.kasemir";
-    site = "gmail.com";
-    document.write('<a href=\"mailto:' + user + '@' + site + '\">');
-    document.write('<i class="fa fa-envelope-o"></i> ' + '</a>');
-    // End 
-    </script></li>
-    <li><a href="http://www.github.com/hkasemir" target="_blank"><i class="fa fa-github-square"></i></a></li>
-    <li><a href="https://twitter.com/HeidiKasemir" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-    <li><a href="https://www.pinterest.com/heidikasemir/" target="_blank"><i class="fa fa-pinterest-square"></i>
-</a></li>
-    <li><a href="https://www.linkedin.com/pub/heidi-kasemir/7b/627/a17" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-
+  <p>- Page by Heidi Kasemir - Get in Touch -</p>
+  <div class="social-icons">
+    <ul>
+      <li><a href=\"mailto:heidi.kasemir@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+      <li><a href="http://www.github.com/hkasemir" target="_blank"><i class="fa fa-github-square"></i></a></li>
+      <li><a href="https://twitter.com/HeidiKasemir" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+      <li><a href="https://www.pinterest.com/heidikasemir/" target="_blank"><i class="fa fa-pinterest-square"></i></a></li>
+      <li><a href="https://www.linkedin.com/pub/heidi-kasemir/7b/627/a17" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
     </ul>
-  
-</div>
+  </div>
 </footer>
-
-
 {% include "includes/footer_scripts.html" %}
-
 </body>
 </html>
