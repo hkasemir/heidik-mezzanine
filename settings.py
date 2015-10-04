@@ -275,7 +275,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 # response phase the middleware will be applied in reverse order.
 MIDDLEWARE_CLASSES = (
     "mezzanine.core.middleware.UpdateCacheMiddleware",
-    "heidik.BeautifulMiddleware",
+    "heidik.heidik_pretty.BeautifulMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
