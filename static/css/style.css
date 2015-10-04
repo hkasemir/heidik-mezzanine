@@ -354,8 +354,6 @@ div.social-icons {
     flex-wrap: wrap;
     text-shadow: 0 0 10px white;
   }
-  
-  
 }
 @media (max-width: 400px){
   
@@ -364,8 +362,11 @@ div.social-icons {
     width: 99%;
     margin: 0.1em;
   }
+}
+
+@media (max-width: 475px){
   
-  .card > p > img {
+  img.full-width {
     width: 100%;
   }
 }
