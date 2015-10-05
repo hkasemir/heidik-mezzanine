@@ -135,8 +135,7 @@ li {
 .nav .active a {
   border-bottom: 3px solid black;
   visibility: visible;
-    transition: all .3s;
-
+  transition: all .3s;
 }
 
 .nav a:hover {
